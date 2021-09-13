@@ -39,10 +39,31 @@ namespace Students_using_windows_forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(textBox1.Text +"/"+
-                textBox2.Text
-                );
+            MessageBox.Show("ID No: " + textBox1.Text
+                            + "\nName: " + textBox2.Text + " " + textBox3.Text
+                            + "\nScore: " + textBox4.Text + " / " + textBox5.Text
+                            + "\nRemarks: (TBD)");
             
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
