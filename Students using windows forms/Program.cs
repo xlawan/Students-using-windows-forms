@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text;
 
 namespace Students_using_windows_forms
 {
@@ -18,6 +19,16 @@ namespace Students_using_windows_forms
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+
+
+
+
+           
         }
+
+
+       
+
+
     }
 }
