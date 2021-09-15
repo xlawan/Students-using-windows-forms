@@ -40,6 +40,8 @@ namespace Students_using_windows_forms
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -92,7 +94,7 @@ namespace Students_using_windows_forms
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(141, 328);
+            this.button1.Location = new System.Drawing.Point(143, 392);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 38);
@@ -109,6 +111,7 @@ namespace Students_using_windows_forms
             this.label3.Size = new System.Drawing.Size(146, 25);
             this.label3.TabIndex = 5;
             this.label3.Text = "Enter your ID no:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -163,11 +166,30 @@ namespace Students_using_windows_forms
             this.textBox5.Size = new System.Drawing.Size(389, 31);
             this.textBox5.TabIndex = 10;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(19, 327);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(41, 25);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "test";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(19, 355);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(389, 31);
+            this.textBox6.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(421, 392);
+            this.ClientSize = new System.Drawing.Size(421, 472);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -202,6 +224,8 @@ namespace Students_using_windows_forms
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox6;
     }
 }
 
