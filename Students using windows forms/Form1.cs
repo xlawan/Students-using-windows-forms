@@ -36,15 +36,16 @@ namespace Students_using_windows_forms
         {
 
         }
-// declaring remarks for public use
+        // declaring remarks for public use
         public string remark;
 
         private void button1_Click(object sender, EventArgs e)
         {
 
             // computation starts here
-            int grade = int.Parse(textBox4.Text);
-
+            //int grade = int.Parse(textBox4.Text);
+            double score = double.Parse(textBox4.Text);
+            double grade = score / double.Parse(textBox5.Text) * 100;
             if (grade >= 95)
             {
                 remark = "EXCELLENT!!!";
@@ -72,7 +73,7 @@ namespace Students_using_windows_forms
                           + "\nScore: " + textBox4.Text + " / " + textBox5.Text +
                           "\nRemarks: " + remark);
 
-                // used the public remark to show remark string in messagebox
+            // used the public remark to show remark string in messagebox
         }
 
 
