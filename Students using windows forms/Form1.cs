@@ -31,11 +31,6 @@ namespace Students_using_windows_forms
         {
 
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
         // declaring remarks for public use
         public string remark;
 
@@ -96,6 +91,15 @@ namespace Students_using_windows_forms
         private void label2_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void TextBox1_ONLY_NUMBER_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                DialogResult dia = MessageBox.Show("Numbers Only");
+            }
         }
     }
 }
