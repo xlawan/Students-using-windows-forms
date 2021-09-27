@@ -70,7 +70,7 @@ namespace Students_using_windows_forms
 
             // used the public remark to show remark string in messagebox
         }
-
+        //this method will clear all inputted characted in the textboxes.
         private void ClearTextBoxes()
         {
             Action<Control.ControlCollection> func = null;
@@ -91,7 +91,7 @@ namespace Students_using_windows_forms
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            ClearTextBoxes();
+            ClearTextBoxes(); 
             //clears all textbox
         }
 
@@ -116,13 +116,48 @@ namespace Students_using_windows_forms
         {
 
         }
-        private void TextBox1_KeyPress(object sender, KeyPressEventArgs e)
+        //error message for ID No. textbox when using letters
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
                 e.Handled = true;
-                DialogResult dia = MessageBox.Show("Numbers Only");
+                DialogResult dia = MessageBox.Show("Please enter NUMBERS only.", "Error");
             }
+        }
+        //error message for First Name textbox when using numbers
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+                DialogResult dia = MessageBox.Show("Please enter LETTERS only.", "Error");
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
