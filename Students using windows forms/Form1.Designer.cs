@@ -53,7 +53,7 @@ namespace Students_using_windows_forms
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(274, 23);
             this.textBox1.TabIndex = 0;
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox1_ONLY_NUMBER_KeyPress);
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox1_KeyPress);
             // 
             // label1
             // 

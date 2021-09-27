@@ -116,8 +116,7 @@ namespace Students_using_windows_forms
         {
 
         }
-
-        private void TextBox1_ONLY_NUMBER_KeyPress(object sender, KeyPressEventArgs e)
+        private void TextBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
