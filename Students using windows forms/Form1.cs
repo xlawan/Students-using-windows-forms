@@ -31,11 +31,6 @@ namespace Students_using_windows_forms
         {
 
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
         // declaring remarks for public use
         public string remark;
 
@@ -76,6 +71,30 @@ namespace Students_using_windows_forms
             // used the public remark to show remark string in messagebox
         }
 
+        private void ClearTextBoxes()
+        {
+            Action<Control.ControlCollection> func = null;
+            func = (controls) =>
+            {
+                foreach (Control control in controls)
+                { 
+                    if (control is TextBox)
+
+                        (control as TextBox).Clear();
+
+                    else
+                        func(control.Controls);
+            }
+            }; func(Controls);
+            
+            
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ClearTextBoxes();
+            //clears all textbox
+        }
+
 
 
         private void label4_Click(object sender, EventArgs e)
@@ -96,6 +115,14 @@ namespace Students_using_windows_forms
         private void label2_Click_1(object sender, EventArgs e)
         {
 
+        }
+        private void TextBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                DialogResult dia = MessageBox.Show("Numbers Only");
+            }
         }
     }
 }
