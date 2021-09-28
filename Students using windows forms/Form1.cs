@@ -39,8 +39,8 @@ namespace Students_using_windows_forms
 
             // computation starts here
             //int grade = int.Parse(textBox4.Text);
-            double score = double.Parse(textBox4.Text);
-            double grade = score / double.Parse(textBox5.Text) * 100;
+            double score = double.Parse(ScoreTxtBox.Text);
+            double grade = score / double.Parse(OverallScoreTxtBox.Text) * 100;
             if (grade >= 95)
             {
                 remark = "EXCELLENT!!!";
@@ -63,9 +63,9 @@ namespace Students_using_windows_forms
             }
             // computation ends here
 
-            MessageBox.Show("ID No: " + textBox1.Text
-                          + "\nName: " + textBox2.Text + " " + textBox3.Text
-                          + "\nScore: " + textBox4.Text + " / " + textBox5.Text +
+            MessageBox.Show("ID No: " + IdNoTxtBox.Text
+                          + "\nName: " + FirstNameTxtBox.Text + " " + LastNameTxtBox.Text
+                          + "\nScore: " + ScoreTxtBox.Text + " / " + OverallScoreTxtBox.Text +
                           "\nRemarks: " + remark);
 
             // used the public remark to show remark string in messagebox
@@ -157,6 +157,20 @@ namespace Students_using_windows_forms
 
         private void label3_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+
+            if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+
+                e.Handled = true;
+                DialogResult dia = MessageBox.Show("Please enter NUMBERS only.", "Error");
+
+            }
 
         }
     }
