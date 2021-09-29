@@ -66,7 +66,7 @@ namespace Students_using_windows_forms
             MessageBox.Show("ID No: " + IdNoTxtBox.Text
                           + "\nName: " + FirstNameTxtBox.Text + " " + LastNameTxtBox.Text
                           + "\nScore: " + ScoreTxtBox.Text + " / " + OverallScoreTxtBox.Text +
-                          "\nRemarks: " + remark);
+                          "\nRemarks: " + remark, "Results");
 
             // used the public remark to show remark string in messagebox
         }
@@ -77,21 +77,21 @@ namespace Students_using_windows_forms
             func = (controls) =>
             {
                 foreach (Control control in controls)
-                { 
+                {
                     if (control is TextBox)
 
                         (control as TextBox).Clear();
 
                     else
                         func(control.Controls);
-            }
+                }
             }; func(Controls);
-            
-            
+
+
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            ClearTextBoxes(); 
+            ClearTextBoxes();
             //clears all textbox
         }
 
