@@ -173,5 +173,18 @@ namespace Students_using_windows_forms
             }
 
         }
+        private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+
+            if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+
+                e.Handled = true;
+                DialogResult dia = MessageBox.Show("Please enter NUMBERS only.", "Error");
+
+            }
+
+        }
     }
 }
