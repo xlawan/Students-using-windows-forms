@@ -134,7 +134,15 @@ namespace Students_using_windows_forms
                 DialogResult dia = MessageBox.Show("Please enter LETTERS only.", "Error");
             }
         }
-
+        //error message for Last Name textbox when using numbers
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+                DialogResult dia = MessageBox.Show("Please enter LETTERS only.", "Error");
+            }
+        }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -159,7 +167,7 @@ namespace Students_using_windows_forms
         {
 
         }
-
+        //error message for Score textbox when using letters
         private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
         {
             char ch = e.KeyChar;

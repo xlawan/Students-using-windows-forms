@@ -148,6 +148,7 @@ namespace Students_using_windows_forms
             this.LastNameTxtBox.Size = new System.Drawing.Size(274, 23);
             this.LastNameTxtBox.TabIndex = 8;
             this.LastNameTxtBox.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.LastNameTxtBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
             // 
             // ScoreTxtBox
             // 
