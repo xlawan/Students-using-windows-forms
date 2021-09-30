@@ -175,6 +175,7 @@ namespace Students_using_windows_forms
             this.OverallScoreTxtBox.Size = new System.Drawing.Size(274, 23);
             this.OverallScoreTxtBox.TabIndex = 10;
             this.OverallScoreTxtBox.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.IdNoTxtBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox5_KeyPress);
             // 
             // button2
             // 
