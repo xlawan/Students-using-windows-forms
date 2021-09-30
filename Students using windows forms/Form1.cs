@@ -22,23 +22,66 @@ namespace Students_using_windows_forms
 
         }
 
+        // start of labels and texboxes
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        
         private void label2_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         // declaring remarks for public use
         public string remark;
 
+        // submit button
         private void button1_Click(object sender, EventArgs e)
         {
 
             // computation starts here
-            //int grade = int.Parse(textBox4.Text);
+            // int grade = int.Parse(textBox4.Text);
             double score = double.Parse(ScoreTxtBox.Text);
             double grade = score / double.Parse(OverallScoreTxtBox.Text) * 100;
             if (grade >= 95)
@@ -70,7 +113,8 @@ namespace Students_using_windows_forms
 
             // used the public remark to show remark string in messagebox
         }
-        //this method will clear all inputted characted in the textboxes.
+
+        // this method will clear all inputted characted in the textboxes.
         private void ClearTextBoxes()
         {
             Action<Control.ControlCollection> func = null;
@@ -89,34 +133,20 @@ namespace Students_using_windows_forms
 
 
         }
+
+        // Clear button
         private void button2_Click(object sender, EventArgs e)
         {
             ClearTextBoxes();
             //clears all textbox
         }
 
-
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void label2_Click_1(object sender, EventArgs e)
         {
 
         }
-        //error message for ID No. textbox when using letters
+
+        // error prompt for ID No. textbox when using letters
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
@@ -125,7 +155,7 @@ namespace Students_using_windows_forms
                 DialogResult dia = MessageBox.Show("Please enter NUMBERS only.", "Error");
             }
         }
-        //error message for First Name textbox when using numbers
+        // error prompt for First Name textbox when using numbers
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
@@ -134,7 +164,7 @@ namespace Students_using_windows_forms
                 DialogResult dia = MessageBox.Show("Please enter LETTERS only.", "Error");
             }
         }
-        //error message for Last Name textbox when using numbers
+        // error prompt for Last Name textbox when using numbers
         private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
@@ -143,31 +173,8 @@ namespace Students_using_windows_forms
                 DialogResult dia = MessageBox.Show("Please enter LETTERS only.", "Error");
             }
         }
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-        //error message for Score textbox when using letters
+        // error prompt for Score textbox when using letters
         private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
         {
             char ch = e.KeyChar;
@@ -181,6 +188,8 @@ namespace Students_using_windows_forms
             }
 
         }
+
+        // error prompt for Overall Score textbox when using letters
         private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
         {
             char ch = e.KeyChar;
