@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Students_using_windows_forms
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
@@ -202,6 +202,34 @@ namespace Students_using_windows_forms
 
             }
 
+        }
+        //start of menu button
+        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void computationInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult dia = MessageBox.Show("Computation details:" +
+                "\nAn excellent grade means you got a 95% - 100% score." +
+                "\nA good grade means you got an 85% - 94% score." +
+                "\nA fair grade means you got a 75% - 84% score." +
+                "\nA poor grade means you got less than a 75% score." +
+                "\n\nTip: Always study smart and be a hardworking student.", "Computation Details");
+        }
+
+        private void aboutUsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult dia = MessageBox.Show("Group: WannaBeTechies" +
+                "\nNames:  Laput, Alaine " +
+                "\nLawan, Alixander " +
+                "\nLibato, Kevin " +
+                "\nLlanto, Cathyrine " +
+                "\nMahinay, Angelu " +
+                "\nMatin - ao, Meinhardt Allain " +
+                "\nMembers: 6 " +
+                "\nPoint person: Lawan, Alixander", "About Us");
         }
     }
 }
