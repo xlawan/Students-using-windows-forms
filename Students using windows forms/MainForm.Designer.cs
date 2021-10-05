@@ -1,7 +1,7 @@
 ﻿
 namespace Students_using_windows_forms
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -41,6 +41,11 @@ namespace Students_using_windows_forms
             this.ScoreTxtBox = new System.Windows.Forms.TextBox();
             this.OverallScoreTxtBox = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.computationInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // IdNoTxtBox
@@ -48,7 +53,7 @@ namespace Students_using_windows_forms
             this.IdNoTxtBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.IdNoTxtBox.Location = new System.Drawing.Point(19, 35);
+            this.IdNoTxtBox.Location = new System.Drawing.Point(19, 62);
             this.IdNoTxtBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.IdNoTxtBox.MaxLength = 500;
             this.IdNoTxtBox.Name = "IdNoTxtBox";
@@ -60,7 +65,7 @@ namespace Students_using_windows_forms
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 195);
+            this.label1.Location = new System.Drawing.Point(19, 222);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(151, 25);
@@ -71,7 +76,7 @@ namespace Students_using_windows_forms
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 262);
+            this.label2.Location = new System.Drawing.Point(19, 289);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(200, 25);
@@ -84,7 +89,7 @@ namespace Students_using_windows_forms
             this.FirstNameTxtBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.FirstNameTxtBox.Location = new System.Drawing.Point(19, 102);
+            this.FirstNameTxtBox.Location = new System.Drawing.Point(19, 129);
             this.FirstNameTxtBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.FirstNameTxtBox.MaxLength = 500;
             this.FirstNameTxtBox.Name = "FirstNameTxtBox";
@@ -98,7 +103,7 @@ namespace Students_using_windows_forms
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.button1.Location = new System.Drawing.Point(144, 337);
+            this.button1.Location = new System.Drawing.Point(144, 364);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 38);
@@ -111,7 +116,7 @@ namespace Students_using_windows_forms
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 8);
+            this.label3.Location = new System.Drawing.Point(19, 35);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(146, 25);
             this.label3.TabIndex = 5;
@@ -121,7 +126,7 @@ namespace Students_using_windows_forms
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 72);
+            this.label4.Location = new System.Drawing.Point(19, 99);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(187, 25);
             this.label4.TabIndex = 6;
@@ -131,7 +136,7 @@ namespace Students_using_windows_forms
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(17, 133);
+            this.label5.Location = new System.Drawing.Point(17, 160);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(179, 25);
             this.label5.TabIndex = 7;
@@ -143,7 +148,7 @@ namespace Students_using_windows_forms
             this.LastNameTxtBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LastNameTxtBox.Location = new System.Drawing.Point(19, 162);
+            this.LastNameTxtBox.Location = new System.Drawing.Point(19, 189);
             this.LastNameTxtBox.MaxLength = 500;
             this.LastNameTxtBox.Name = "LastNameTxtBox";
             this.LastNameTxtBox.Size = new System.Drawing.Size(390, 31);
@@ -156,7 +161,7 @@ namespace Students_using_windows_forms
             this.ScoreTxtBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ScoreTxtBox.Location = new System.Drawing.Point(19, 227);
+            this.ScoreTxtBox.Location = new System.Drawing.Point(19, 254);
             this.ScoreTxtBox.MaxLength = 500;
             this.ScoreTxtBox.Name = "ScoreTxtBox";
             this.ScoreTxtBox.Size = new System.Drawing.Size(390, 31);
@@ -169,7 +174,7 @@ namespace Students_using_windows_forms
             this.OverallScoreTxtBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.OverallScoreTxtBox.Location = new System.Drawing.Point(19, 288);
+            this.OverallScoreTxtBox.Location = new System.Drawing.Point(19, 315);
             this.OverallScoreTxtBox.MaxLength = 500;
             this.OverallScoreTxtBox.Name = "OverallScoreTxtBox";
             this.OverallScoreTxtBox.Size = new System.Drawing.Size(390, 31);
@@ -181,7 +186,7 @@ namespace Students_using_windows_forms
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(144, 385);
+            this.button2.Location = new System.Drawing.Point(144, 412);
             this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(126, 38);
@@ -190,7 +195,42 @@ namespace Students_using_windows_forms
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Form1
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(421, 33);
+            this.menuStrip1.TabIndex = 12;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // menuToolStripMenuItem
+            // 
+            this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.computationInfoToolStripMenuItem,
+            this.aboutUsToolStripMenuItem});
+            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(73, 29);
+            this.menuToolStripMenuItem.Text = "Menu";
+            this.menuToolStripMenuItem.Click += new System.EventHandler(this.menuToolStripMenuItem_Click);
+            // 
+            // computationInfoToolStripMenuItem
+            // 
+            this.computationInfoToolStripMenuItem.Name = "computationInfoToolStripMenuItem";
+            this.computationInfoToolStripMenuItem.Size = new System.Drawing.Size(256, 34);
+            this.computationInfoToolStripMenuItem.Text = "Computation Info";
+            this.computationInfoToolStripMenuItem.Click += new System.EventHandler(this.computationInfoToolStripMenuItem_Click);
+            // 
+            // aboutUsToolStripMenuItem
+            // 
+            this.aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
+            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(256, 34);
+            this.aboutUsToolStripMenuItem.Text = "About us";
+            this.aboutUsToolStripMenuItem.Click += new System.EventHandler(this.aboutUsToolStripMenuItem_Click);
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -207,11 +247,15 @@ namespace Students_using_windows_forms
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.IdNoTxtBox);
-            this.Name = "Form1";
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "MainForm";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.RightToLeftLayout = true;
             this.Text = "Students";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,6 +275,10 @@ namespace Students_using_windows_forms
         private System.Windows.Forms.TextBox ScoreTxtBox;
         private System.Windows.Forms.TextBox OverallScoreTxtBox;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem computationInfoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutUsToolStripMenuItem;
     }
 }
 
