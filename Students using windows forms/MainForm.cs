@@ -208,7 +208,7 @@ namespace Students_using_windows_forms
         {
 
         }
-
+        //Computations menu details
         private void computationInfoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DialogResult dia = MessageBox.Show("Computation details:" +
@@ -218,7 +218,7 @@ namespace Students_using_windows_forms
                 "\nA poor grade means you got less than a 75% score." +
                 "\n\nTip: Always study smart and be a hardworking student.", "Computation Details");
         }
-
+        //About menu details
         private void aboutUsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DialogResult dia = MessageBox.Show("Group: WannaBeTechies" +
@@ -230,6 +230,12 @@ namespace Students_using_windows_forms
                 "\nMatin - ao, Meinhardt Allain " +
                 "\nMembers: 6 " +
                 "\nPoint person: Lawan, Alixander", "About Us");
+        }
+        //To open DBForm for database management
+        private void databaseManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DBForm dbForm = new DBForm();
+            dbForm.Show();
         }
     }
 }

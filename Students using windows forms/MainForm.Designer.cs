@@ -45,6 +45,7 @@ namespace Students_using_windows_forms
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.computationInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.databaseManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -199,7 +200,8 @@ namespace Students_using_windows_forms
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuToolStripMenuItem});
+            this.menuToolStripMenuItem,
+            this.databaseManagementToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(421, 33);
@@ -219,16 +221,23 @@ namespace Students_using_windows_forms
             // computationInfoToolStripMenuItem
             // 
             this.computationInfoToolStripMenuItem.Name = "computationInfoToolStripMenuItem";
-            this.computationInfoToolStripMenuItem.Size = new System.Drawing.Size(256, 34);
+            this.computationInfoToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.computationInfoToolStripMenuItem.Text = "Computation Info";
             this.computationInfoToolStripMenuItem.Click += new System.EventHandler(this.computationInfoToolStripMenuItem_Click);
             // 
             // aboutUsToolStripMenuItem
             // 
             this.aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
-            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(256, 34);
+            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.aboutUsToolStripMenuItem.Text = "About us";
             this.aboutUsToolStripMenuItem.Click += new System.EventHandler(this.aboutUsToolStripMenuItem_Click);
+            // 
+            // databaseManagementToolStripMenuItem
+            // 
+            this.databaseManagementToolStripMenuItem.Name = "databaseManagementToolStripMenuItem";
+            this.databaseManagementToolStripMenuItem.Size = new System.Drawing.Size(212, 29);
+            this.databaseManagementToolStripMenuItem.Text = "Database Management";
+            this.databaseManagementToolStripMenuItem.Click += new System.EventHandler(this.databaseManagementToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -279,6 +288,7 @@ namespace Students_using_windows_forms
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem computationInfoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutUsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem databaseManagementToolStripMenuItem;
     }
 }
 
