@@ -73,7 +73,7 @@ namespace Students_using_windows_forms
         //textbox for searching data from the database
         private void textBox7_TextChanged(object sender, EventArgs e)
         {
-            //conditional statement to select Lastname to be searched
+            //conditional statement to select IdNo to be searched
             if (comboBox1.Text == "ID No")
             {
                 con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
