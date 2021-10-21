@@ -70,6 +70,72 @@ namespace Students_using_windows_forms
             dataGridView1.DataSource = ds.Tables[0];
             con.Close();
         }
+        //textbox for searching data from the database
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+            //conditional statement to select Lastname to be searched
+            if (comboBox1.Text == "ID No")
+            {
+                con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+                con.Open();
+                cmd = new SqlCommand("Select * from Students where IdNo like '%' + '" + textBox7.Text + "' + '%' ");
+                cmd.Connection = con;
+                da = new SqlDataAdapter(cmd);
+                ds = new DataSet();
+                da.Fill(ds, "Students");
+                dataGridView1.DataSource = ds.Tables[0];
+                con.Close();
+            }
+            //conditional statement to select Lastname to be searched
+            else if (comboBox1.Text == "Last Name")
+            {
+                con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+                con.Open();
+                cmd = new SqlCommand("Select * from Students where LastName like '%' + '" + textBox7.Text + "' + '%' ");
+                cmd.Connection = con;
+                da = new SqlDataAdapter(cmd);
+                ds = new DataSet();
+                da.Fill(ds, "Students");
+                dataGridView1.DataSource = ds.Tables[0];
+                con.Close();
+            }
+            //conditional statement to select FirstName to be searched
+            else if (comboBox1.Text == "First Name")
+            {
+                con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+                con.Open();
+                cmd = new SqlCommand("Select * from Students where FirstName like '%' + '" + textBox7.Text + "' + '%' ");
+                cmd.Connection = con;
+                da = new SqlDataAdapter(cmd);
+                ds = new DataSet();
+                da.Fill(ds, "Students");
+                dataGridView1.DataSource = ds.Tables[0];
+                con.Close();
+            }
+            //conditional statement to select Course to be searched
+            else if (comboBox1.Text == "Course")
+            {
+                con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+                con.Open();
+                cmd = new SqlCommand("Select * from Students where Course like '%' + '" + textBox7.Text + "' + '%' ");
+                cmd.Connection = con;
+                da = new SqlDataAdapter(cmd);
+                ds = new DataSet();
+                da.Fill(ds, "Students");
+                dataGridView1.DataSource = ds.Tables[0];
+                con.Close();
+            }
+
+            else
+            {
+                
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
@@ -85,5 +151,12 @@ namespace Students_using_windows_forms
         {
 
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }
